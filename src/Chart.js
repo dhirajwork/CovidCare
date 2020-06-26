@@ -9,16 +9,17 @@ function createData(time, cases) {
 }
 
 const data = [
-  createData('20200425',2402),
-  createData('20200428',2868),
-  createData('20200501',3466),
-  createData('20200504',3928),
-  createData('20200507',4884),
-  createData('20200510',5549),
-  createData('20200513',6156),
-  createData('20200516',5881),
-  createData('20200519',5787),
-  createData('20200522',),
+  createData('20200525',2402),
+  createData('20200528',2868),
+  createData('20200601',3466),
+  createData('20200604',3928),
+  createData('20200607',4884),
+  createData('20200610',5549),
+  createData('20200613',6156),
+  createData('20200616',5881),
+  createData('20200619',5787),
+  createData('20200622',5615),
+  createData('20200625',4852)
 ];
 
 export default function Chart() {

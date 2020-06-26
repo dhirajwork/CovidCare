@@ -20,11 +20,11 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Total Beds</Title>
       <Typography component="p" variant="h4">
-      { 918+ 10340 }
+      { 993 + 10425 }
       </Typography>
       <Title>Available Beds</Title>
       <Typography component="p" variant="h4">
-       { 336 + 8174}
+       { 280 + 8233}
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       { new Date().getDate()-1 }-

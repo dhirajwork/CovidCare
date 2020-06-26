@@ -8,7 +8,43 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
-import {data} from './listItems';
+
+
+
+export const data = [
+  [22.510570, 88.376890, 'AMRI Hospital, Dhakuria',1,'Kolkata' ,46, 15],
+  [22.620730, 88.378720, 'Apollo Gleneagles Hospita',2, 'Kolkata', 30, 0],
+  [22.572410, 88.358230, 'B.P. Poddar Hospital',3, 'Kolkata', 36, 20],
+  [22.565570, 88.370210 , 'Belle Vue Clinic*',4, 'Kolkata', 86, 19],
+  [22.5637675,88.3825054,' Bhagirathi Neotia Woman and Child Care Centre, Rawdon Street',5,'Kolkata' ,1, 1],
+  [22.5752586,88.4161183, 'Calcutta Heart Clinic',6, 'North 24-Parganas',24 ,7],
+  [22.5885419,88.3802549,'Charnock Hospital',7, 'North 24-Parganas' ,52 ,34],
+  [22.5767954,88.3912109,'Charring Cross Nursing Home',8, 'North 24-Parganas', 24, 2 ],
+  [22.563703,88.2774388,'CMRI',9,'Kolkata', 20, 20 ],
+  [22.5885419,88.3802549,'Columbia Asia Hospital',10, 'North 24-Parganas',7, 0],
+  [22.6007451,88.4028246,'Daffodil Hospita',11, 'Kolkata',47, 18 ],
+  [22.5032472,88.362275,' EEDF (Sri Aurobinda Seva Kendra)',12,'Kolkata',15, 5],
+  [22.5343674,88.3226259,'Ekbalpur Nursing Home Pvt Ltd',13, 'Kolkata ' ,33, 18],
+  [22.5988183,88.291788,'Fortis Hospital',14,'Kolkata', 52, 0 ],
+  [22.5141362,88.3969304,'Genesis Hospital',15, 'Kolkata', 4, 0],
+  [22.624582,88.4149373,'ILS Dumdum',16, 'Kolkata' ,52, 3],
+  [22.5469568,88.3597299,'INK Kolkata',17, 'Kolkata', 2 ,0],
+  [22.5177593,88.3192564,'Kolkata Port Trust',18, 'Kolkata',40, 18 ],
+  [22.5325926,88.3283038,'Kothari Medical Centre',19, 'Kolkata', 102,43 ],
+  [22.494397,88.3986416,'Medica Superspecialty Hospital',20, 'Kolkata' ,92, 6],
+  [22.5460829,88.3492676,' Nightingale Hospital',21, 'Kolkata', 3, 2],
+  [22.5894048,88.3916188,'North City Hospital',22, 'Kolkata' ,6, 0],
+  [22.4806837,88.3919835,'Peerless Hospital',23, 'Kolkata' ,47, 1]
+  [22.4913137,88.4002597,'R N Tagore International Institute of Cardiac Science',24, 'Kolkata',27, 5],
+  [22.5233638,88.349733,'Ramkrishna Mission Seva Prathisthan',25, 'Kolkata',0, 0],
+  [22.6205981,88.4307119,'Spandan Hospital, Kolkata',26, 'North 24-Paraganas', 15, 7],
+  [22.5874387,88.4694196,'Tata Medical Centre (For cancer patient only)',27, 'North 24-Paraganas',15, 3],
+  [22.5322604,88.3269842,'Woodlands Multispecility Hospital',28, 'Kolkata', 43, 23],
+  [22.519828,88.3293549,'Zodiac Medicare Pvt. Ltd.',29, 'Kolkata', 40, 6],
+  [22.5135084,88.4006953,'Ruby General Hospital',30,'Kolkata', 32, 0] 
+
+];
+
 
 // Generate Order Data
 function createData(id, district,name, total, vacancy , ownership) {
@@ -19,12 +55,12 @@ for (var index = 0; index < data.length; ++index) {
   rows.push(createData(data[index][3],data[index][4] ,data[index][2] ,data[index][5], data[index][6]))
 }
 /*const rows = [
-  createData(1,'Kolkata' ,'AMRI Hospital Dhakuria' ,60, 43 ),
-  createData(2, 'Kolkata', 'Apollo Gleneagles Hospital', 44, 0),
-  createData(3, 'Kolkata', 'B P Poddar', 20, 19),
-  createData(4, 'Kolkata', 'Belle Vue Clinic *', 86, 32 ),
+  createData(1,'Kolkata' ,'AMRI Hospital Dhakuria' ,46 , 15 ),
+  createData(2, 'Kolkata', 'Apollo Gleneagles Hospital', 30, 0),
+  createData(3, 'Kolkata', 'B P Poddar', 36, 20),
+  createData(4, 'Kolkata', 'Belle Vue Clinic *', 86, 19 ),
   createData(5,'Kolkata' ,'Bhagirathi Neotia Hospital,Kolkata' ,1, 1), 
-  createData(6, 'North 24-Parganas','Calcutta Heart Clinic & Hospital ,Salt Lake',24 ,13 ),
+  createData(6, 'North 24-Parganas','Calcutta Heart Clinic & Hospital ,Salt Lake',24 ,7 ),
   createData(7, 'North 24-Parganas','Charnok Hospital' ,50 ,34),
   createData(8, 'North 24-Parganas', 'Charring Cross', 8, 0 ),
   createData(9,'Kolkata', 'CMRI', 20, 19 ),
