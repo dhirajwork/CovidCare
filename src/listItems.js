@@ -71,7 +71,7 @@ function findNearBy(position){
     var closest;
   
     for (var index = 0; index < data.length; ++index) {
-      if (data[index][6]=0){
+      if (data[index][6]==0){
         continue;
       }
       var dif = PythagorasEquirectangular(latitude, longitude, data[index][0], data[index][1]);
@@ -82,7 +82,7 @@ function findNearBy(position){
     }
   
     // eslint-disable-next-line no-restricted-globals
-    if (alert(data[closest][2] +"is nearest. Navigate?") || 1){
+    if (alert(data[closest][2] +"is nearest. Navigate?") || true){
       var alink="https://bing.com/maps/default.aspx?rtp=adr."+data[closest][2]+"~pos."+latitude+"_"+longitude+"_MyPlace&rtop=0~1~0";
       window.open(alink);
     };
