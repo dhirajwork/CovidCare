@@ -93,19 +93,12 @@ function findNearBy(position){
   NearestCity(position.coords.latitude, position.coords.longitude);
 }
 
-const [open, setOpen] = React.useState(true);
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
 
 
 export const mainListItems = (
   
   <div>
-    <ListItem button onClick={handleDrawerClose}>
+    <ListItem button >
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
