@@ -57,7 +57,7 @@ function findNearBy(position){
     }
   
     // eslint-disable-next-line no-restricted-globals
-    if (alert(data[closest][2] +"is nearest. Navigate?") || true){
+    if (alert(data[closest][2] +" is nearest. Navigate?") || true){
       var alink="https://bing.com/maps/default.aspx?rtp=adr."+data[closest][2]+"~pos."+latitude+"_"+longitude+"_MyPlace&rtop=0~1~0";
       window.open(alink);
     };

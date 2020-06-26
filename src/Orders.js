@@ -86,7 +86,7 @@ for (var index = 0; index < data.length; ++index) {
   createData(29, 'Kolkata','Zodiac Medicare Pvt. Ltd.(Flemming Nursing Home)', 20, 2) ]; */
   const rows_govt = [
     createData(1, 'Kolkata', 'M R Bangur DH & SSH', 670, 352),
-    createData(2, 'Kolkata CNCI' ,400, 223),
+    createData(2, 'Kolkata', 'CNCI' ,400, 223),
     createData(3, 'Kolkata', 'AMRI Salt Lake ',51, 2),
     createData(4, 'Kolkata', 'Desun Hospital, Kolkata', 78, 12),
     createData(5, 'Kolkata', 'ID BG', 82, 5),
