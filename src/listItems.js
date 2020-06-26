@@ -9,6 +9,7 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import { TextareaAutosize } from '@material-ui/core';
 
 export const data = [
   [22.510570, 88.376890, 'AMRI Hospital, Dhakuria',1,'Kolkata' ,60, 43],
@@ -81,7 +82,7 @@ function findNearBy(position){
     }
   
     // eslint-disable-next-line no-restricted-globals
-    if (alert(data[closest][2] +"is nearest. Navigate?") || True){
+    if (alert(data[closest][2] +"is nearest. Navigate?") || 1){
       var alink="https://bing.com/maps/default.aspx?rtp=adr."+data[closest][2]+"~pos."+latitude+"_"+longitude+"_MyPlace&rtop=0~1~0";
       window.open(alink);
     };
@@ -92,9 +93,19 @@ function findNearBy(position){
   NearestCity(position.coords.latitude, position.coords.longitude);
 }
 
+const [open, setOpen] = React.useState(true);
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
+
 export const mainListItems = (
+  
   <div>
-    <ListItem button>
+    <ListItem button onClick={handleDrawerClose}>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
