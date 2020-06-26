@@ -13,7 +13,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import { TextareaAutosize } from '@material-ui/core';
 import './App.css';
 import Orders from './Orders';
-import {data} from './Orders';
+import {d} from './Orders';
 import Deposits from './Deposits';
 
 
@@ -43,13 +43,12 @@ function findNearBy(position){
   function NearestCity(latitude, longitude) {
     var minDif = 99999;
     var closest;
-  
-    for (var index = 0; index < data.length; ++index) {
+    for (var index = 0; index < d.length; ++index) {
       // eslint-disable-next-line no-restricted-globals
-      if (data[index][6]==0){
+      if (d[index][6]==0){
         continue;
       }
-      var dif = PythagorasEquirectangular(latitude, longitude, data[index][0], data[index][1]);
+      var dif = PythagorasEquirectangular(latitude, longitude, d[index][0], d[index][1]);
       if (dif < minDif) {
         closest = index;
         minDif = dif;
@@ -57,8 +56,8 @@ function findNearBy(position){
     }
   
     // eslint-disable-next-line no-restricted-globals
-    if (alert(data[closest][2] +" is nearest. Navigate?") || true){
-      var alink="https://bing.com/maps/default.aspx?rtp=adr."+data[closest][2]+"~pos."+latitude+"_"+longitude+"_MyPlace&rtop=0~1~0";
+    if (alert(d[closest][2] +" is nearest. Navigate?") || true){
+      var alink="https://bing.com/maps/default.aspx?rtp=adr."+d[closest][2]+"~pos."+latitude+"_"+longitude+"_MyPlace&rtop=0~1~0";
       window.open(alink);
     };
   }
