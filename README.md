@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A react app to find the nearest available vacant covid care facility in a single click.
+##Demo 
+Visit https://covid-care-kolkata.herokuapp.com/
 
 ## Available Scripts
 
